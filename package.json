@@ -1,5 +1,8 @@
 {
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^6.0.0"
+    "purgecss": "^6.0.0"
+  },
+  "scripts": {
+    "build": "purgecss --css assets/bootstrap/bootstrap.css --content index.html assets/maugallery.js  --output assets/bootstrap/bootstrap.min.css --safelist item-column mb-4 col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4"
   }
 }
